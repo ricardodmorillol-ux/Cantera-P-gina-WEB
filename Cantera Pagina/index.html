@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cantera | Fútbol y Pádel</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CABECERA: Logotipo a la izquierda -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">⚽🎾 CANTERA</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Quiénes Somos</a></li>
+          <li><a href="#deportes">Canchas y Servicios</a></li>
+          <li><a href="#reservas">Reservaciones</a></li>
+          <li><a href="#vacantes">Torneos y Vacantes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="hero">
+    <div class="hero-media">
+      <!-- Video o imagen de fondo propia del complejo -->
+      <video autoplay muted loop poster="hero-fallback.jpg">
+        <source src="video-deportivo.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-content container">
+      <h1>Vive la Pasión del Deporte</h1>
+      <p>Disfruta de nuestras canchas profesionales de Fútbol y Pádel con la mejor energía y un ambiente cercano.</p>
+      <a href="#reservas" class="btn btn-primary">Reserva tu Cancha</a>
+    </div>
+  </section>
+
+  <!-- QUIÉNES SOMOS -->
+  <section id="nosotros" class="section bg-light">
+    <div class="container grid-2">
+      <div class="text-block">
+        <h2>Quiénes Somos</h2>
+        <p>En <strong>Cantera</strong> creamos el espacio ideal para los amantes del deporte. Ofrecemos instalaciones de primer nivel diseñadas para la práctica de fútbol y pádel, fomentando la comunidad, la salud y un trato cálido y humano para todos nuestros jugadores.</p>
+      </div>
+      <div class="image-block">
+        <img src="fotografia-propia.jpg" alt="Instalaciones Cantera">
+      </div>
+    </div>
+  </section>
+
+  <!-- CANCHAS Y SERVICIOS -->
+  <section id="deportes" class="section">
+    <div class="container">
+      <h2 class="section-title">Nuestras Canchas y Servicios</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Canchas de Pádel</h3>
+          <p>Superficies de última generación, iluminación LED profesional y cristales reglamentarios para partidos épicos.</p>
+        </div>
+        <div class="card">
+          <h3>Canchas de Fútbol</h3>
+          <p>Grama artificial de alta durabilidad, espacios amplios y seguros para torneos o partidos recreativos con amigos.</p>
+        </div>
+        <div class="card">
+          <h3>Área Social y Cafetería</h3>
+          <p>El espacio perfecto para relajarte, hidratarte y compartir después de cada encuentro deportivo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDARIO / RESERVAS DE CANCHAS -->
+  <section id="reservas" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Reserva de Canchas y Horarios</h2>
+      <div class="booking-wrapper">
+        <form id="booking-form" class="form-card">
+          <div class="form-group">
+            <label for="name">Nombre y Apellido</label>
+            <input type="text" id="name" required placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="sport">Selecciona el Deporte</label>
+            <select id="sport" class="form-control" required>
+              <option value="">Seleccione...</option>
+              <option value="padel">Cancha de Pádel</option>
+              <option value="futbol">Cancha de Fútbol</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Fecha y Hora</label>
+            <input type="datetime-local" id="date" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Confirmar Reservación</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- TORNEOS Y VACANTES -->
+  <section id="vacantes" class="section">
+    <div class="container">
+      <h2 class="section-title">Bolsa de Empleo y Torneos</h2>
+      <div class="vacancies-list">
+        <div class="vacancy-card">
+          <div>
+            <h3>Staff de Mantenimiento y Atención al Cliente</h3>
+            <p>Medio tiempo / Tiempo completo - Únete a nuestro equipo</p>
+          </div>
+          <button class="btn btn-secondary" onclick="openChatbot('Postulación Empleo')">Postularse</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO, GOOGLE MAPS Y REDES SOCIALES -->
+  <section id="contacto" class="section bg-light">
+    <div class="container grid-2">
+      <div class="contact-info">
+        <h2>Contacto y Ubicación</h2>
+        <p>¿Tienes dudas sobre los torneos o quieres apartar un horario fijo? Escríbenos o visítanos directamente en nuestras instalaciones.</p>
+        
+        <!-- Redes sociales destacadas en contacto -->
+        <div class="social-links">
+          <h3>Síguenos</h3>
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">WhatsApp</a>
+          <a href="#" target="_blank">Facebook</a>
+        </div>
+      </div>
+
+      <!-- Integración Google Maps -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125583.5673898683!2d-71.681121!3d10.654921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e89990234a2e5d9%3A0xb366a6a439c28892!2sMaracaibo%2C%20Zulia!5e0!3m2!1ses!2sve!4v1700000000000!5m2!1ses!2sve" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- WIDGET DE CHATBOT FLOTANTE -->
+  <div class="chatbot-widget" id="chatbot">
+    <button class="chatbot-toggle" onclick="toggleChat()">💬 Chat Cantera</button>
+    <div class="chatbot-window" id="chat-window">
+      <div class="chat-header">Asistente Cantera Sport</div>
+      <div class="chat-body" id="chat-body">
+        <p class="bot-msg">¡Hola! ¿Listo para jugar? Pregúntanos sobre disponibilidad de canchas, torneos o vacantes.</p>
+      </div>
+      <div class="chat-footer">
+        <input type="text" id="chat-input" placeholder="Escribe tu mensaje...">
+        <button onclick="sendMessage()">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
